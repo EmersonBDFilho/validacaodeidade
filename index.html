@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Idade</title>
+</head>
+
+<body class="val">
+    <div class="container2">
+        <h1>Últimas fotos de Lendas na Música</h1>
+        <p>Esta página contém conteúdo sensível e pode abordar temas perturbadores, como questões de saúde mental,
+            suicídio e outras situações emocionalmente desafiadoras. Recomendamos que menores de 18 anos, ou qualquer
+            pessoa que se sinta desconfortável com esses tópicos, considerem a possibilidade de não acessar o material.
+            É importante lembrar que, em situações de sofrimento emocional ou mental, procurar ajuda profissional pode
+            ser um passo fundamental para o bem-estar.</p>
+    </div>
+    <div class="container">
+
+        <h2>Validação de Idade</h1>
+            <p>Insira a sua idade: </p>
+            <input type="number" name="" id="idadeInput">
+            <button id="verify" onclick="verificarIdade()">Verificar</button>
+    </div>
+
+    <script>
+        function verificarIdade() {
+            const idade = parseInt(document.getElementById("idadeInput").value);
+
+            //se 
+            if (idade >= 18) {
+
+                window.location.href = "permitido.html";
+            }
+
+            //se não
+            else {
+
+                window.location.href = "npermitido.html";
+            }
+        }
+    </script>
+
+    <img id="flower" src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/512px/1f940.png" alt="flormurcha">
+
+</body>
+
+</html>
